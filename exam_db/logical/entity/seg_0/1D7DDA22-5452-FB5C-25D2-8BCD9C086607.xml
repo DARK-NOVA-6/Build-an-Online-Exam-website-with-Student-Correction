@@ -1,0 +1,120 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="1D7DDA22-5452-FB5C-25D2-8BCD9C086607" name="option">
+<createdBy>MHD</createdBy>
+<createdTime>2022-06-13 21:19:40 UTC</createdTime>
+<generatorID>0C62785E-5740-F94E-0316-0AFBD95C86A1</generatorID>
+<ownerDesignName>exam_db</ownerDesignName>
+<engineerTo>
+<item key="B34E13B9-847D-3AB4-1482-58CB221A4081" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id" id="58E5B9AD-B478-5C2A-715F-41260A8876D9">
+<createdBy>MHD</createdBy>
+<createdTime>2022-06-13 21:19:40 UTC</createdTime>
+<generatorID>BDF94D33-10A6-F4D4-3B9B-08DFB334FCFA</generatorID>
+<ownerDesignName>exam_db</ownerDesignName>
+<engineerTo>
+<item key="B34E13B9-847D-3AB4-1482-58CB221A4081" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="text" id="51D24D6A-6313-EAB9-E44C-2C7AAB6F04DA">
+<createdBy>MHD</createdBy>
+<createdTime>2022-06-13 21:19:40 UTC</createdTime>
+<generatorID>A4B7BA07-670E-498C-123E-13725137C2EB</generatorID>
+<ownerDesignName>exam_db</ownerDesignName>
+<engineerTo>
+<item key="B34E13B9-847D-3AB4-1482-58CB221A4081" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>250</dataTypeSize>
+<ownDataTypeParameters>250,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="is correct" id="FEB0C490-8834-7C8A-7219-671B074C31C9">
+<createdBy>MHD</createdBy>
+<createdTime>2022-06-13 21:19:40 UTC</createdTime>
+<generatorID>DF92B520-134C-C4C5-C8A1-38E6EE327A10</generatorID>
+<ownerDesignName>exam_db</ownerDesignName>
+<engineerTo>
+<item key="B34E13B9-847D-3AB4-1482-58CB221A4081" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="order" id="D3B45496-1F61-6440-64AA-A7A5073B5EEC">
+<createdBy>MHD</createdBy>
+<createdTime>2022-06-13 21:19:40 UTC</createdTime>
+<generatorID>0A686DB3-C6F2-ACA3-A800-0E5F1B56D2FA</generatorID>
+<ownerDesignName>exam_db</ownerDesignName>
+<engineerTo>
+<item key="B34E13B9-847D-3AB4-1482-58CB221A4081" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="photo url" id="013C5359-A26F-9890-038F-9BEC7873AEA0">
+<createdBy>MHD</createdBy>
+<createdTime>2022-06-13 21:19:40 UTC</createdTime>
+<generatorID>31E12639-569D-36F8-7F96-4D30BBABC973</generatorID>
+<ownerDesignName>exam_db</ownerDesignName>
+<engineerTo>
+<item key="B34E13B9-847D-3AB4-1482-58CB221A4081" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>250</dataTypeSize>
+<ownDataTypeParameters>250,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="question id" id="787A55F4-6EB1-AFCC-BFFE-71D96D9D7002">
+<createdBy>MHD</createdBy>
+<createdTime>2022-06-13 21:19:40 UTC</createdTime>
+<generatorID>1403766F-8970-4367-D562-E40C175EE3A7</generatorID>
+<ownerDesignName>exam_db</ownerDesignName>
+<engineerTo>
+<item key="B34E13B9-847D-3AB4-1482-58CB221A4081" value="true"/>
+</engineerTo>
+<referedAttribute>2BA960D0-A718-3815-CE9E-9CD80BCEF7B8</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="BDC6A559-1A69-936F-30CC-79F380EC17D2" name="option PK">
+<createdBy>MHD</createdBy>
+<createdTime>2022-06-13 21:19:40 UTC</createdTime>
+<generatorID>07BF7CC6-EF19-A5F8-F893-C4932D476802</generatorID>
+<ownerDesignName>exam_db</ownerDesignName>
+<engineerTo>
+<item key="B34E13B9-847D-3AB4-1482-58CB221A4081" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>58E5B9AD-B478-5C2A-715F-41260A8876D9</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

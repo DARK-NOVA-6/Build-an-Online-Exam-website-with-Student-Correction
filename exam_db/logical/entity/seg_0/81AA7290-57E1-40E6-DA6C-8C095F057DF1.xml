@@ -1,0 +1,115 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="81AA7290-57E1-40E6-DA6C-8C095F057DF1" name="test">
+<createdBy>MHD</createdBy>
+<createdTime>2022-06-13 21:19:40 UTC</createdTime>
+<generatorID>16C042F8-260C-65D5-F99A-3C0F41A8D081</generatorID>
+<ownerDesignName>exam_db</ownerDesignName>
+<engineerTo>
+<item key="B34E13B9-847D-3AB4-1482-58CB221A4081" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id" id="7D4623E2-4C3A-26DF-C490-3DDF2E1D65AE">
+<createdBy>MHD</createdBy>
+<createdTime>2022-06-13 21:19:40 UTC</createdTime>
+<generatorID>731B7D58-4C20-8AFA-1180-AC56286D63DF</generatorID>
+<ownerDesignName>exam_db</ownerDesignName>
+<engineerTo>
+<item key="B34E13B9-847D-3AB4-1482-58CB221A4081" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="start time" id="6E09C156-2A51-30DA-E7A7-90D26D236631">
+<createdBy>MHD</createdBy>
+<createdTime>2022-06-13 21:19:40 UTC</createdTime>
+<generatorID>6ACE9E1E-BA6D-CC93-D93B-7BAD06C2C046</generatorID>
+<ownerDesignName>exam_db</ownerDesignName>
+<engineerTo>
+<item key="B34E13B9-847D-3AB4-1482-58CB221A4081" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="test duration" id="1303C981-1B98-834B-DFAC-1A32CE2908CF">
+<createdBy>MHD</createdBy>
+<createdTime>2022-06-13 21:19:40 UTC</createdTime>
+<generatorID>A81B892C-3E0C-CDEC-CACD-99EB47B632CE</generatorID>
+<ownerDesignName>exam_db</ownerDesignName>
+<engineerTo>
+<item key="B34E13B9-847D-3AB4-1482-58CB221A4081" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="correcting duration" id="B98175FB-40AA-F452-15E9-F2EFFFE23443">
+<createdBy>MHD</createdBy>
+<createdTime>2022-06-13 21:19:40 UTC</createdTime>
+<generatorID>4DFD5D84-CB18-4A38-A150-F82EE67A6F4F</generatorID>
+<ownerDesignName>exam_db</ownerDesignName>
+<engineerTo>
+<item key="B34E13B9-847D-3AB4-1482-58CB221A4081" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="course id" id="1EB57170-7F03-92E9-6976-807EA6968B48">
+<createdBy>MHD</createdBy>
+<createdTime>2022-06-13 21:19:40 UTC</createdTime>
+<generatorID>448A39F5-FB8B-A300-3D29-228D49E48F91</generatorID>
+<ownerDesignName>exam_db</ownerDesignName>
+<engineerTo>
+<item key="B34E13B9-847D-3AB4-1482-58CB221A4081" value="true"/>
+</engineerTo>
+<referedAttribute>B70D104F-6BFC-1F6D-9528-644742F45F86</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="teacher id" id="15D28F91-B0B8-BDA8-F078-58CC9B404422">
+<createdBy>MHD</createdBy>
+<createdTime>2022-06-13 21:19:40 UTC</createdTime>
+<generatorID>DD3C95F0-80F6-45A4-39F2-BDFCEF0A9B0D</generatorID>
+<ownerDesignName>exam_db</ownerDesignName>
+<engineerTo>
+<item key="B34E13B9-847D-3AB4-1482-58CB221A4081" value="true"/>
+</engineerTo>
+<referedAttribute>53931893-4F25-D870-120A-A95AE88230EC</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="936A59EC-F8F0-425C-5A85-6484615DA8EC" name="test PK">
+<createdBy>MHD</createdBy>
+<createdTime>2022-06-13 21:19:40 UTC</createdTime>
+<generatorID>3CA14848-E954-4ECB-56A6-FD0C4314F2BF</generatorID>
+<ownerDesignName>exam_db</ownerDesignName>
+<engineerTo>
+<item key="B34E13B9-847D-3AB4-1482-58CB221A4081" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>7D4623E2-4C3A-26DF-C490-3DDF2E1D65AE</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

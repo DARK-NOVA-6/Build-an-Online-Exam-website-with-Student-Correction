@@ -1,0 +1,114 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="D6A46174-D1E9-1595-37AE-86705A204101" name="student">
+<createdBy>MHD</createdBy>
+<createdTime>2022-06-10 04:31:03 UTC</createdTime>
+<ownerDesignName>exam_db</ownerDesignName>
+<ordsAlias>table_1</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="4710D447-896A-A606-B3FD-0F05E2B21C9B">
+<createdBy>MHD</createdBy>
+<createdTime>2022-06-10 04:36:59 UTC</createdTime>
+<ownerDesignName>exam_db</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="first_name" id="63AD1D94-6C8C-F11E-F02A-2A067946F3D8">
+<createdBy>MHD</createdBy>
+<createdTime>2022-06-10 04:34:39 UTC</createdTime>
+<ownerDesignName>exam_db</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>60</dataTypeSize>
+<ownDataTypeParameters>60,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="last_name" id="C2239532-CE34-CB58-E1D9-7DA069D10EBE">
+<createdBy>MHD</createdBy>
+<createdTime>2022-06-10 04:34:39 UTC</createdTime>
+<ownerDesignName>exam_db</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>60</dataTypeSize>
+<ownDataTypeParameters>60,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="username" id="22EAD84D-AB46-C4E8-D752-2B08BFF756CC">
+<createdBy>MHD</createdBy>
+<createdTime>2022-06-10 04:34:39 UTC</createdTime>
+<ownerDesignName>exam_db</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>60</dataTypeSize>
+<ownDataTypeParameters>60,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="password" id="33419BBE-23F1-414E-DE47-5CE07953E42D">
+<createdBy>MHD</createdBy>
+<createdTime>2022-06-10 04:34:39 UTC</createdTime>
+<ownerDesignName>exam_db</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>250</dataTypeSize>
+<ownDataTypeParameters>250,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="points" id="DAAA1494-6829-90DE-8DE2-3BF78B1B3C5E">
+<createdBy>MHD</createdBy>
+<createdTime>2022-06-12 05:17:13 UTC</createdTime>
+<ownerDesignName>exam_db</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="photo_url" id="62B14044-0E2F-48A1-A093-B130EF2291AB">
+<createdBy>MHD</createdBy>
+<createdTime>2022-06-10 04:34:39 UTC</createdTime>
+<ownerDesignName>exam_db</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>250</dataTypeSize>
+<ownDataTypeParameters>250,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="9227D97B-872F-5C21-F183-9C6E5ECF7D5E" name="student_PK">
+<createdBy>MHD</createdBy>
+<createdTime>2022-06-10 04:36:59 UTC</createdTime>
+<ownerDesignName>exam_db</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4710D447-896A-A606-B3FD-0F05E2B21C9B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="192D25F5-AC79-50CB-7C6B-1F2B2A88FFEB" name="student__UN">
+<createdBy>MHD</createdBy>
+<createdTime>2022-06-10 04:36:59 UTC</createdTime>
+<ownerDesignName>exam_db</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="22EAD84D-AB46-C4E8-D752-2B08BFF756CC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,1 @@
+ALTER TABLE test ADD CONSTRAINT test_pk PRIMARY KEY ( id );

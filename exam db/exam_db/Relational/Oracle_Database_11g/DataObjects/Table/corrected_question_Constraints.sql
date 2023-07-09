@@ -1,0 +1,1 @@
+ALTER TABLE corrected_question ADD CONSTRAINT corrected_question_pk PRIMARY KEY ( id );

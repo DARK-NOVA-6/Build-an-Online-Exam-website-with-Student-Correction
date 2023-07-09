@@ -1,0 +1,1 @@
+ALTER TABLE question ADD CONSTRAINT question_pk PRIMARY KEY ( id );

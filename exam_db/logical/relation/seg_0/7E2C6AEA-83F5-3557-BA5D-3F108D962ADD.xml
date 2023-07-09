@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="solved_question_question_FK" directorySegmentName="seg_0" id="7E2C6AEA-83F5-3557-BA5D-3F108D962ADD">
+<createdBy>MHD</createdBy>
+<createdTime>2022-06-13 21:19:40 UTC</createdTime>
+<generatorID>C002643E-04B6-E910-ABB9-EF7274A202FA</generatorID>
+<ownerDesignName>exam_db</ownerDesignName>
+<engineerTo>
+<item key="B34E13B9-847D-3AB4-1482-58CB221A4081" value="true"/>
+</engineerTo>
+<sourcePk>0C4DE495-8914-2493-2C2C-97214C1FADCE</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>0D2BAAD4-FFBB-6BEE-E60D-708712AEEABC</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>FA70300C-7A01-824A-9706-CDAC3F757EA1</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

@@ -1,0 +1,115 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="160950EA-C19F-B63E-BA83-F8AD27CC4F95" name="corrected_question">
+<createdBy>MHD</createdBy>
+<createdTime>2022-06-12 05:46:48 UTC</createdTime>
+<ownerDesignName>exam_db</ownerDesignName>
+<ordsAlias>table_10</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="489BCFBC-B91D-F4DF-DEAE-7FB62EAFA282">
+<createdBy>MHD</createdBy>
+<createdTime>2022-06-12 05:48:30 UTC</createdTime>
+<ownerDesignName>exam_db</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="validation" id="3C693A8D-DC4A-3892-D0E7-8A3C9771136D">
+<createdBy>MHD</createdBy>
+<createdTime>2022-06-12 05:48:30 UTC</createdTime>
+<ownerDesignName>exam_db</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<listOfValues>
+<valueDef value="C" description="correct"/>
+<valueDef value="D" description="no validation"/>
+<valueDef value="W" description="wrone"/>
+</listOfValues>
+<defaultValue>D</defaultValue>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<defaultOntNull>true</defaultOntNull>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="sub_points" id="84F3CEED-9784-52BF-BFFD-02CA75E18312">
+<createdBy>MHD</createdBy>
+<createdTime>2022-06-12 06:15:49 UTC</createdTime>
+<ownerDesignName>exam_db</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<defaultValue>0</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<defaultOntNull>true</defaultOntNull>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="solved_question_id" id="64C43EB7-234E-6033-2497-DAFA407900B7">
+<createdBy>MHD</createdBy>
+<createdTime>2022-06-13 21:02:12 UTC</createdTime>
+<ownerDesignName>exam_db</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="7053D0F0-5017-EBE3-D811-4E3279697507" referredColumn="BB655D62-DE11-054C-02C8-1565657FA88A"/>
+</associations>
+</Column>
+<Column name="corrected_test_id" id="A532AE5D-CCEE-7518-349C-6B21EAA87B4E">
+<createdBy>MHD</createdBy>
+<createdTime>2022-06-13 21:02:20 UTC</createdTime>
+<ownerDesignName>exam_db</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="C1D8D588-3DD7-A744-7A57-85D1ED21DA06" referredColumn="067594DA-0E61-2932-6726-EC696480F0FB"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="6A0061F2-FCF2-3716-6E06-695F4F59C429" name="corrected_question_PK">
+<createdBy>MHD</createdBy>
+<createdTime>2022-06-12 05:48:30 UTC</createdTime>
+<ownerDesignName>exam_db</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="489BCFBC-B91D-F4DF-DEAE-7FB62EAFA282"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="48603E52-6625-FD92-F3A5-A3A2591FCCC0" name="corrected_question_solved_question_FK">
+<createdBy>MHD</createdBy>
+<createdTime>2022-06-13 21:02:12 UTC</createdTime>
+<ownerDesignName>exam_db</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="64C43EB7-234E-6033-2497-DAFA407900B7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2FC0EAB7-53F4-A95A-A9AD-65705D451FAE" name="corrected_question_corrected_test_FK">
+<createdBy>MHD</createdBy>
+<createdTime>2022-06-13 21:02:20 UTC</createdTime>
+<ownerDesignName>exam_db</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A532AE5D-CCEE-7518-349C-6B21EAA87B4E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,232 @@
+#mainCont::before {
+    position: absolute;
+    content: '';
+    background-color: currentColor;
+    width: 0;
+    height: 0;
+    bottom: 0;
+    filter: blur(0rem);
+    transform: perspective(0rem) rotateX(0deg) scale(0, 0);
+    opacity: 0;
+}
+
+.innerContainer {
+    /* background-color: white; */
+    margin-top: 30px;
+    width: 130vh;
+    min-height: 100vh;
+}
+
+.topContainer {
+    margin-top: 80px;
+    width: 130vh;
+    display: flex;
+    /* background-color: green; */
+    justify-content: space-around;
+}
+
+#title,
+#title2 {
+    color: white;
+    font-family: 'Courier New', Courier;
+    text-shadow: 0px 0px 10px var(--c2);
+    font-size: 28pt;
+    font-weight: bold;
+    position: relative;
+}
+
+#title i,
+#title2 i {
+    font-size: 20pt;
+    position: absolute;
+    font-weight: 500;
+    white-space: nowrap;
+}
+
+#title i {
+    bottom: -20px;
+    right: -150px;
+}
+
+#title2 i {
+    bottom: -20px;
+    right: -60px;
+}
+
+.datePicker input {
+    text-align: center;
+    width: 200px;
+    height: 30px;
+    font-size: 16pt;
+}
+
+#startT {
+    font-size: 16pt;
+    padding: 0 10px;
+}
+
+.aboveLabel {
+    position: relative;
+    white-space: nowrap;
+}
+
+.label {
+    color: white;
+    position: absolute;
+    top: -35px;
+    left: 0;
+    font-size: 16pt;
+}
+
+.label2 {
+    color: white;
+    font-size: 16pt;
+    padding-right: 5px;
+}
+
+.number {
+    width: 100px;
+    height: 30px;
+    font-size: 16pt;
+    text-align: center;
+}
+
+#noQuestions {
+    font-weight: bold;
+    font-size: 18pt;
+    font-style: italic;
+}
+
+#addTestContorl {
+    display: flex;
+    justify-content: space-around;
+}
+
+#addQues,
+#addTest {
+    padding: 10px 20px;
+    font-size: 16pt;
+}
+
+.addOption {
+    padding: 10px 20px;
+    font-size: 14pt;
+}
+
+.quesContainer {
+    padding: 1em;
+    width: 100%;
+    height: max-content;
+    min-height: 200px;
+    background-color: var(--c2);
+    font-size: 16pt;
+    margin: 25px 0;
+}
+
+.deleteQuestion {
+    padding: 10px;
+}
+
+.deletionField {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.quesTitleContainer,
+.addOptions {
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+}
+
+.addOptions {
+    justify-content: space-between;
+}
+
+.quesText,
+.textAnswer {
+    padding: 10px 0;
+}
+
+.textAnswerContent {
+    font-size: 16pt;
+    padding: 5px;
+    width: 100%;
+}
+
+.quesTypeTitle,
+.addOptionNote {
+    color: black;
+}
+
+.quesTextTitle {
+    color: black;
+    padding-bottom: 5px;
+}
+
+.quesTextContent {
+    width: 100%;
+    font-size: 16pt;
+}
+
+.quesTypeList {
+    font-size: 12pt;
+    margin-left: 100px;
+    border: 3px solid var(--c7);
+    background-color: var(--c6);
+    border-radius: 20px;
+    padding: 5px;
+}
+
+.quesTypeList option[disabled='disabled'] {
+    background-color: gray;
+    color: white;
+}
+
+.trueFalse,
+.optionsList {
+    padding-left: 100px;
+}
+
+.optionItem,
+.option {
+    color: black;
+    font-weight: bold;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.option input[type='text'] {
+    font-size: 14pt;
+    padding: 5px;
+    margin: 0 30px 0 10px;
+}
+
+.deleteOption {
+    padding: 2px 5px;
+    border-radius: 50%;
+}
+
+.radio,
+.checkBox {
+    height: 20px;
+    width: 20px;
+}
+
+
+/* 
+.nj-timepick {
+    position: fixed;
+    right: -100%;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    z-index: 5000;
+    transition: right 0.7s ease;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.8);
+} */

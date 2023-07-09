@@ -1,0 +1,139 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="17BA6201-78F8-3F38-67E6-8E6419881E7D" name="question">
+<createdBy>MHD</createdBy>
+<createdTime>2022-06-10 04:32:00 UTC</createdTime>
+<ownerDesignName>exam_db</ownerDesignName>
+<ordsAlias>table_5</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="C8986EFE-318C-4AFC-40B0-C08834554E03">
+<createdBy>MHD</createdBy>
+<createdTime>2022-06-10 04:41:53 UTC</createdTime>
+<ownerDesignName>exam_db</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="text" id="D5E1DA3A-DC99-838A-2945-5EEE5681B813">
+<createdBy>MHD</createdBy>
+<createdTime>2022-06-10 04:41:53 UTC</createdTime>
+<ownerDesignName>exam_db</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1500</dataTypeSize>
+<ownDataTypeParameters>1500,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="type" id="D92D79EA-DE8A-03CD-7513-550F95B0B08F">
+<createdBy>MHD</createdBy>
+<createdTime>2022-06-10 04:41:53 UTC</createdTime>
+<ownerDesignName>exam_db</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<listOfValues>
+<valueDef value="opt" description="multi options"/>
+<valueDef value="trf" description="true or false"/>
+<valueDef value="wrd" description="unique answer"/>
+</listOfValues>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="correct_answer" id="FB46A8F6-D3CD-4FD7-89E7-4789BEF236E1">
+<createdBy>MHD</createdBy>
+<createdTime>2022-06-12 05:36:52 UTC</createdTime>
+<ownerDesignName>exam_db</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>250</dataTypeSize>
+<ownDataTypeParameters>250,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="photo_url" id="79B62867-A098-C607-D3D1-040A060AB472">
+<createdBy>MHD</createdBy>
+<createdTime>2022-06-10 04:41:53 UTC</createdTime>
+<ownerDesignName>exam_db</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>250</dataTypeSize>
+<ownDataTypeParameters>250,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="solved_points" id="3B78A4D6-63FC-66B7-0F80-89D946BF992A">
+<createdBy>MHD</createdBy>
+<createdTime>2022-06-12 05:27:52 UTC</createdTime>
+<ownerDesignName>exam_db</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<defaultValue>150</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<defaultOntNull>true</defaultOntNull>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="correction_point" id="98666C28-76CE-B6C5-E4F3-6C170A2F8478">
+<createdBy>MHD</createdBy>
+<createdTime>2022-06-12 05:27:52 UTC</createdTime>
+<ownerDesignName>exam_db</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<defaultValue>50</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<defaultOntNull>true</defaultOntNull>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="test_id" id="163CADF5-57A2-2020-AD9B-32D2B1BB72DF">
+<createdBy>MHD</createdBy>
+<createdTime>2022-06-13 20:51:44 UTC</createdTime>
+<ownerDesignName>exam_db</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="0B8BB73D-C959-A9C1-1C45-F355FAC129DD" referredColumn="731B7D58-4C20-8AFA-1180-AC56286D63DF"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="24280FE0-4208-4E96-583B-4A02F55FAE5B" name="question_PK">
+<createdBy>MHD</createdBy>
+<createdTime>2022-06-10 04:41:53 UTC</createdTime>
+<ownerDesignName>exam_db</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C8986EFE-318C-4AFC-40B0-C08834554E03"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="6CE8604E-B1CF-BF2A-271E-212DBD6CB674" name="question_test_FK">
+<createdBy>MHD</createdBy>
+<createdTime>2022-06-13 20:51:44 UTC</createdTime>
+<ownerDesignName>exam_db</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="163CADF5-57A2-2020-AD9B-32D2B1BB72DF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

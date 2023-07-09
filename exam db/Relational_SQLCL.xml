@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog 
+	xmlns="http://www.liquibase.org/xml/ns/dbchangelog" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xmlns:n0="http://www.oracle.com/xml/ns/dbchangelog-ext" 
+	xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog 
+	http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.6.xsd">
+<changeSet author="MHD" id="_10">
+ <n0:runOracleScript objectName="MDSYS.SDO_GEOMETRY.sql" ownerName="OSDDM-MHD" sourceType="FILE" >
+   <n0:source><![CDATA[exam_db\Relational\Oracle_Database_11g\DataObjects\Structure_Type\MDSYS.SDO_GEOMETRY.sql]]></n0:source>
+ </n0:runOracleScript>
+</changeSet>
+<changeSet author="MHD" id="_20">
+ <n0:runOracleScript objectName="XMLTYPE.sql" ownerName="OSDDM-MHD" sourceType="FILE" >
+   <n0:source><![CDATA[exam_db\Relational\Oracle_Database_11g\DataObjects\Structure_Type\XMLTYPE.sql]]></n0:source>
+ </n0:runOracleScript>
+</changeSet>
+<changeSet author="MHD" id="_30">
+ <n0:runOracleScript objectName="corrected_question.sql" ownerName="OSDDM-MHD" sourceType="FILE" >
+   <n0:source><![CDATA[exam_db\Relational\Oracle_Database_11g\DataObjects\Table\corrected_question.sql]]></n0:source>
+ </n0:runOracleScript>
+</changeSet>
+<changeSet author="MHD" id="_40">
+ <n0:runOracleScript objectName="corrected_question_Constraints.sql" ownerName="OSDDM-MHD" sourceType="FILE" >
+   <n0:source><![CDATA[exam_db\Relational\Oracle_Database_11g\DataObjects\Table\corrected_question_Constraints.sql]]></n0:source>
+ </n0:runOracleScript>
+</changeSet>
+<changeSet author="MHD" id="_50">
+ <n0:runOracleScript objectName="corrected_test.sql" ownerName="OSDDM-MHD" sourceType="FILE" >
+   <n0:source><![CDATA[exam_db\Relational\Oracle_Database_11g\DataObjects\Table\corrected_test.sql]]></n0:source>
+ </n0:runOracleScript>
+</changeSet>
+<changeSet author="MHD" id="_60">
+ <n0:runOracleScript objectName="corrected_test_Constraints.sql" ownerName="OSDDM-MHD" sourceType="FILE" >
+   <n0:source><![CDATA[exam_db\Relational\Oracle_Database_11g\DataObjects\Table\corrected_test_Constraints.sql]]></n0:source>
+ </n0:runOracleScript>
+</changeSet>
+<changeSet author="MHD" id="_70">
+ <n0:runOracleScript objectName="course.sql" ownerName="OSDDM-MHD" sourceType="FILE" >
+   <n0:source><![CDATA[exam_db\Relational\Oracle_Database_11g\DataObjects\Table\course.sql]]></n0:source>
+ </n0:runOracleScript>
+</changeSet>
+<changeSet author="MHD" id="_80">
+ <n0:runOracleScript objectName="course_Constraints.sql" ownerName="OSDDM-MHD" sourceType="FILE" >
+   <n0:source><![CDATA[exam_db\Relational\Oracle_Database_11g\DataObjects\Table\course_Constraints.sql]]></n0:source>
+ </n0:runOracleScript>
+</changeSet>
+<changeSet author="MHD" id="_90">
+ <n0:runOracleScript objectName="option.sql" ownerName="OSDDM-MHD" sourceType="FILE" >
+   <n0:source><![CDATA[exam_db\Relational\Oracle_Database_11g\DataObjects\Table\option.sql]]></n0:source>
+ </n0:runOracleScript>
+</changeSet>
+<changeSet author="MHD" id="_100">
+ <n0:runOracleScript objectName="option_Constraints.sql" ownerName="OSDDM-MHD" sourceType="FILE" >
+   <n0:source><![CDATA[exam_db\Relational\Oracle_Database_11g\DataObjects\Table\option_Constraints.sql]]></n0:source>
+ </n0:runOracleScript>
+</changeSet>
+<changeSet author="MHD" id="_110">
+ <n0:runOracleScript objectName="question.sql" ownerName="OSDDM-MHD" sourceType="FILE" >
+   <n0:source><![CDATA[exam_db\Relational\Oracle_Database_11g\DataObjects\Table\question.sql]]></n0:source>
+ </n0:runOracleScript>
+</changeSet>
+<changeSet author="MHD" id="_120">
+ <n0:runOracleScript objectName="question_Constraints.sql" ownerName="OSDDM-MHD" sourceType="FILE" >
+   <n0:source><![CDATA[exam_db\Relational\Oracle_Database_11g\DataObjects\Table\question_Constraints.sql]]></n0:source>
+ </n0:runOracleScript>
+</changeSet>
+<changeSet author="MHD" id="_130">
+ <n0:runOracleScript objectName="solved_question.sql" ownerName="OSDDM-MHD" sourceType="FILE" >
+   <n0:source><![CDATA[exam_db\Relational\Oracle_Database_11g\DataObjects\Table\solved_question.sql]]></n0:source>
+ </n0:runOracleScript>
+</changeSet>
+<changeSet author="MHD" id="_140">
+ <n0:runOracleScript objectName="solved_question_Constraints.sql" ownerName="OSDDM-MHD" sourceType="FILE" >
+   <n0:source><![CDATA[exam_db\Relational\Oracle_Database_11g\DataObjects\Table\solved_question_Constraints.sql]]></n0:source>
+ </n0:runOracleScript>
+</changeSet>
+<changeSet author="MHD" id="_150">
+ <n0:runOracleScript objectName="solved_test.sql" ownerName="OSDDM-MHD" sourceType="FILE" >
+   <n0:source><![CDATA[exam_db\Relational\Oracle_Database_11g\DataObjects\Table\solved_test.sql]]></n0:source>
+ </n0:runOracleScript>
+</changeSet>
+<changeSet author="MHD" id="_160">
+ <n0:runOracleScript objectName="solved_test_Constraints.sql" ownerName="OSDDM-MHD" sourceType="FILE" >
+   <n0:source><![CDATA[exam_db\Relational\Oracle_Database_11g\DataObjects\Table\solved_test_Constraints.sql]]></n0:source>
+ </n0:runOracleScript>
+</changeSet>
+<changeSet author="MHD" id="_170">
+ <n0:runOracleScript objectName="student.sql" ownerName="OSDDM-MHD" sourceType="FILE" >
+   <n0:source><![CDATA[exam_db\Relational\Oracle_Database_11g\DataObjects\Table\student.sql]]></n0:source>
+ </n0:runOracleScript>
+</changeSet>
+<changeSet author="MHD" id="_180">
+ <n0:runOracleScript objectName="student_Constraints.sql" ownerName="OSDDM-MHD" sourceType="FILE" >
+   <n0:source><![CDATA[exam_db\Relational\Oracle_Database_11g\DataObjects\Table\student_Constraints.sql]]></n0:source>
+ </n0:runOracleScript>
+</changeSet>
+<changeSet author="MHD" id="_190">
+ <n0:runOracleScript objectName="teacher.sql" ownerName="OSDDM-MHD" sourceType="FILE" >
+   <n0:source><![CDATA[exam_db\Relational\Oracle_Database_11g\DataObjects\Table\teacher.sql]]></n0:source>
+ </n0:runOracleScript>
+</changeSet>
+<changeSet author="MHD" id="_200">
+ <n0:runOracleScript objectName="teacher_Constraints.sql" ownerName="OSDDM-MHD" sourceType="FILE" >
+   <n0:source><![CDATA[exam_db\Relational\Oracle_Database_11g\DataObjects\Table\teacher_Constraints.sql]]></n0:source>
+ </n0:runOracleScript>
+</changeSet>
+<changeSet author="MHD" id="_210">
+ <n0:runOracleScript objectName="test.sql" ownerName="OSDDM-MHD" sourceType="FILE" >
+   <n0:source><![CDATA[exam_db\Relational\Oracle_Database_11g\DataObjects\Table\test.sql]]></n0:source>
+ </n0:runOracleScript>
+</changeSet>
+<changeSet author="MHD" id="_220">
+ <n0:runOracleScript objectName="test_Constraints.sql" ownerName="OSDDM-MHD" sourceType="FILE" >
+   <n0:source><![CDATA[exam_db\Relational\Oracle_Database_11g\DataObjects\Table\test_Constraints.sql]]></n0:source>
+ </n0:runOracleScript>
+</changeSet>
+<changeSet author="MHD" id="_230">
+ <n0:runOracleScript objectName="corrected_question_corrected_test_FK.sql" ownerName="OSDDM-MHD" sourceType="FILE" >
+   <n0:source><![CDATA[exam_db\Relational\Oracle_Database_11g\DataObjects\ForeignKey\corrected_question_corrected_test_FK.sql]]></n0:source>
+ </n0:runOracleScript>
+</changeSet>
+<changeSet author="MHD" id="_240">
+ <n0:runOracleScript objectName="corrected_question_solved_question_FK.sql" ownerName="OSDDM-MHD" sourceType="FILE" >
+   <n0:source><![CDATA[exam_db\Relational\Oracle_Database_11g\DataObjects\ForeignKey\corrected_question_solved_question_FK.sql]]></n0:source>
+ </n0:runOracleScript>
+</changeSet>
+<changeSet author="MHD" id="_250">
+ <n0:runOracleScript objectName="corrected_test_solved_test_FK.sql" ownerName="OSDDM-MHD" sourceType="FILE" >
+   <n0:source><![CDATA[exam_db\Relational\Oracle_Database_11g\DataObjects\ForeignKey\corrected_test_solved_test_FK.sql]]></n0:source>
+ </n0:runOracleScript>
+</changeSet>
+<changeSet author="MHD" id="_260">
+ <n0:runOracleScript objectName="corrected_test_student_FK.sql" ownerName="OSDDM-MHD" sourceType="FILE" >
+   <n0:source><![CDATA[exam_db\Relational\Oracle_Database_11g\DataObjects\ForeignKey\corrected_test_student_FK.sql]]></n0:source>
+ </n0:runOracleScript>
+</changeSet>
+<changeSet author="MHD" id="_270">
+ <n0:runOracleScript objectName="option_question_FK.sql" ownerName="OSDDM-MHD" sourceType="FILE" >
+   <n0:source><![CDATA[exam_db\Relational\Oracle_Database_11g\DataObjects\ForeignKey\option_question_FK.sql]]></n0:source>
+ </n0:runOracleScript>
+</changeSet>
+<changeSet author="MHD" id="_280">
+ <n0:runOracleScript objectName="question_test_FK.sql" ownerName="OSDDM-MHD" sourceType="FILE" >
+   <n0:source><![CDATA[exam_db\Relational\Oracle_Database_11g\DataObjects\ForeignKey\question_test_FK.sql]]></n0:source>
+ </n0:runOracleScript>
+</changeSet>
+<changeSet author="MHD" id="_290">
+ <n0:runOracleScript objectName="solved_question_question_FK.sql" ownerName="OSDDM-MHD" sourceType="FILE" >
+   <n0:source><![CDATA[exam_db\Relational\Oracle_Database_11g\DataObjects\ForeignKey\solved_question_question_FK.sql]]></n0:source>
+ </n0:runOracleScript>
+</changeSet>
+<changeSet author="MHD" id="_300">
+ <n0:runOracleScript objectName="solved_question_solved_test_FK.sql" ownerName="OSDDM-MHD" sourceType="FILE" >
+   <n0:source><![CDATA[exam_db\Relational\Oracle_Database_11g\DataObjects\ForeignKey\solved_question_solved_test_FK.sql]]></n0:source>
+ </n0:runOracleScript>
+</changeSet>
+<changeSet author="MHD" id="_310">
+ <n0:runOracleScript objectName="solved_test_student_FK.sql" ownerName="OSDDM-MHD" sourceType="FILE" >
+   <n0:source><![CDATA[exam_db\Relational\Oracle_Database_11g\DataObjects\ForeignKey\solved_test_student_FK.sql]]></n0:source>
+ </n0:runOracleScript>
+</changeSet>
+<changeSet author="MHD" id="_320">
+ <n0:runOracleScript objectName="solved_test_test_FK.sql" ownerName="OSDDM-MHD" sourceType="FILE" >
+   <n0:source><![CDATA[exam_db\Relational\Oracle_Database_11g\DataObjects\ForeignKey\solved_test_test_FK.sql]]></n0:source>
+ </n0:runOracleScript>
+</changeSet>
+<changeSet author="MHD" id="_330">
+ <n0:runOracleScript objectName="test_course_FK.sql" ownerName="OSDDM-MHD" sourceType="FILE" >
+   <n0:source><![CDATA[exam_db\Relational\Oracle_Database_11g\DataObjects\ForeignKey\test_course_FK.sql]]></n0:source>
+ </n0:runOracleScript>
+</changeSet>
+<changeSet author="MHD" id="_340">
+ <n0:runOracleScript objectName="test_teacher_FK.sql" ownerName="OSDDM-MHD" sourceType="FILE" >
+   <n0:source><![CDATA[exam_db\Relational\Oracle_Database_11g\DataObjects\ForeignKey\test_teacher_FK.sql]]></n0:source>
+ </n0:runOracleScript>
+</changeSet>
+</databaseChangeLog>

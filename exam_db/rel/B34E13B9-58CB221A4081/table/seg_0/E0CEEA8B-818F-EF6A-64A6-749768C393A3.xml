@@ -1,0 +1,121 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E0CEEA8B-818F-EF6A-64A6-749768C393A3" name="solved_question">
+<createdBy>MHD</createdBy>
+<createdTime>2022-06-12 05:35:00 UTC</createdTime>
+<ownerDesignName>exam_db</ownerDesignName>
+<ordsAlias>table_9</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="BB655D62-DE11-054C-02C8-1565657FA88A">
+<createdBy>MHD</createdBy>
+<createdTime>2022-06-12 05:35:58 UTC</createdTime>
+<ownerDesignName>exam_db</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="answer" id="F8F9D49E-9292-0370-D1F1-1D28445A6F47">
+<createdBy>MHD</createdBy>
+<createdTime>2022-06-12 05:35:58 UTC</createdTime>
+<ownerDesignName>exam_db</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>250</dataTypeSize>
+<ownDataTypeParameters>250,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="selected_options" id="8C31E953-1743-9F35-310E-F97CE5E7D188">
+<createdBy>MHD</createdBy>
+<createdTime>2022-06-12 05:46:12 UTC</createdTime>
+<ownerDesignName>exam_db</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>6</dataTypeSize>
+<ownDataTypeParameters>6,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="sub_points" id="6ED953C4-B528-DBD6-5CD1-488F993FF3F9">
+<createdBy>MHD</createdBy>
+<createdTime>2022-06-12 05:44:25 UTC</createdTime>
+<ownerDesignName>exam_db</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<defaultValue>0</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<defaultOntNull>true</defaultOntNull>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="question_id" id="F2751680-1464-C8FD-F99D-73ED23F99BD3">
+<createdBy>MHD</createdBy>
+<createdTime>2022-06-13 20:59:45 UTC</createdTime>
+<ownerDesignName>exam_db</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="C002643E-04B6-E910-ABB9-EF7274A202FA" referredColumn="C8986EFE-318C-4AFC-40B0-C08834554E03"/>
+</associations>
+</Column>
+<Column name="solved_test_id" id="48A315E6-CA6D-3399-606A-77C64184F004">
+<createdBy>MHD</createdBy>
+<createdTime>2022-06-13 21:00:07 UTC</createdTime>
+<ownerDesignName>exam_db</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="99438689-A92A-1C3F-7F07-E3F68B221DAD" referredColumn="73F50B03-4C8D-89A6-0A60-723635C745DC"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="9C39EFC9-FAA7-57D4-B2DB-093EC9CA1A83" name="solved_question_PK">
+<createdBy>MHD</createdBy>
+<createdTime>2022-06-12 05:35:58 UTC</createdTime>
+<ownerDesignName>exam_db</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BB655D62-DE11-054C-02C8-1565657FA88A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="078BA807-B770-157A-E1BA-005F02599020" name="solved_question_question_FK">
+<createdBy>MHD</createdBy>
+<createdTime>2022-06-13 20:59:45 UTC</createdTime>
+<ownerDesignName>exam_db</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F2751680-1464-C8FD-F99D-73ED23F99BD3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="1A088894-C660-57A7-795A-2740F6B562CD" name="solved_question_solved_test_FK">
+<createdBy>MHD</createdBy>
+<createdTime>2022-06-13 21:00:07 UTC</createdTime>
+<ownerDesignName>exam_db</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="48A315E6-CA6D-3399-606A-77C64184F004"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

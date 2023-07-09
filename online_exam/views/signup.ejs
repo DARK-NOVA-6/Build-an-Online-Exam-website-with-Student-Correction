@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>
+        Sign Up
+    </title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="../public/js/loading.js"></script>
+    <script src="../public/js/popup.js"></script>
+    <script src="../public/js/ripple.js" defer></script>
+    <script src="../public/js/headerScript.js"></script>
+    <link rel="stylesheet" href="../public/css/main.css"/>
+    <link rel="stylesheet" href="../public/css/popup.css"/>
+    <link rel="stylesheet" href="../public/css/button.css"/>
+    <link rel="stylesheet" href="../public/css/loading.css"/>
+    <link rel="stylesheet" href="../public/css/signup.css"/>
+    <link rel="stylesheet" href="../public/css/card.css"/>
+    <link rel="stylesheet" href="../public/css/animation.css"/>
+    <link rel="stylesheet" href="../public/css/textInput.css"/>
+</head>
+
+<body class="body" id="headBody">
+<header class="header" id="header">
+    <a id="logo" href="http://Google.com" target="_blank">  </a>
+    <div id="optionContainer">
+        <div id="logInOutContainer">
+            <a id='profileLink' href='http://127.0.0.1:8888/profile'>
+                <img id='accountPhoto' src=''>
+                <div id="accountDetails"></div>
+            </a>
+            <div id="logInOut" class="button"></div>
+        </div>
+    </div>
+</header>
+
+<div class='ripple-background'>
+    <div class='circle xxlarge shade1'></div>
+    <div class='circle xlarge shade2'></div>
+    <div class='circle large shade3'></div>
+    <div class='circle medium shade4'></div>
+    <div class='circle small shade5'></div>
+</div>
+
+<div class="backgroundSection">
+    <div class="container" id="accTypeChosr">
+        <div class="cardContainer">
+            <div class="card cardAnimate" id="teacherCard" onclick="selectCard('teacherCard')">
+                <div class="cardImg">
+                    <img src="../public/icon/accTypAdmin.svg"/>
+                </div>
+
+                <div class="cardOverlay">
+                    <div class="cardTitle">
+                        <div class="cardTitleArc2"></div>
+                        <div class="cardTitleArc1"></div>
+                        Instructor
+                    </div>
+
+                    <div class="cardDescription">
+                        A Teacher in the university
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="card cardAnimate" id="studentCard" onclick="selectCard('studentCard')">
+                <div class="cardImg">
+                    <img src="../public/icon/accTypStudent.svg"/>
+                </div>
+
+                <div class="cardOverlay">
+                    <div class="cardTitle">
+                        <div class="cardTitleArc2"></div>
+                        <div class="cardTitleArc1"></div>
+                        Student
+                    </div>
+
+                    <div class="cardDescription">
+                        A university student who will take exams
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="button" id="selectButton" onclick="getForm()">
+            Select
+        </div>
+    </div>
+
+    <!--
+
+
+
+
+
+
+
+
+
+
+
+    -->
+
+    <!--
+
+
+
+
+
+
+
+
+    -->
+    <% if (typeof msg != 'undefined') { %>
+        <script>
+            buildPopup(false,()=>{},false,()=>{
+                window.location.href = window.location.href;
+            },'Ok');
+            insertContent('<%= msg %>');
+        </script>
+    <% }%>
+    <div class="container" id="signupForm" style="display: none;">
+        <div id="formHeader">
+            <div class="button" id="backButton" onclick="getAccTypeChoser()" title="Back">
+                <img src="../public/icon/left_arrow1.png" alt="Back">
+            </div>
+            <span>Sign-Up</span>
+        </div>
+        <form id="formid" autocomplete="off" action="http://127.0.0.1:8888/sign-up" method="post" enctype="multipart/form-data">
+
+            <div class="row">
+
+                <div class="column">
+                    <div class="textInput" id="fnameInput">
+                        <input name="first_name" type="text" id="fname" value="">
+                        <label for="fname">First Name</label>
+                        <div style="position:relative;">
+                            <img src="../public/icon/hint.svg" alt="Ok" id="fnameImg">
+                            <div class="tips" id="fnameTips">
+                                enter your first name
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="textInput" id="lnameInput">
+                        <input name="last_name" type="text" id="lname" value="">
+                        <label for="lname">Last Name</label>
+                        <div style="position:relative;">
+                            <img src="../public/icon/hint.svg" alt="Ok" id="lnameImg">
+                            <div class="tips" id="lnameTips">
+                                enter your last name
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="textInput" id="usernameInput">
+                        <input name="username" type="text" id="username" value="">
+                        <label for="username">User Name </label>
+                        <div style="position:relative;">
+                            <img src="../public/icon/hint.svg" alt="Ok" id="usernameImg">
+                            <div class="tips" id="usernameTips">
+                                enter your user name
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="textInput" id="passwordInput">
+                        <input name="password" type="password" id="password" autocomplete="new-password" value="">
+                        <label for="password">Password</label>
+                        <div style="position:relative;">
+                            <img src="../public/icon/hint.svg" alt="Ok" id="passwordImg">
+                            <div class="tips" id="passwordTips">
+                                enter your password
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div id="prog">
+
+                        <div role="progressbar" aria-valuenow="40" aria-valuemax="100" aria-valuemin="0"
+                             id="passwordProgBar">
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="textInput" id="confPasswordInput">
+                        <input name="conf_password" type="password" id="confPassword" value="">
+                        <label for="confPassword">Confirm Password</label>
+                        <div style="position:relative;">
+                            <img src="../public/icon/hint.svg" alt="Ok" id="confPasswordImg">
+                            <div class="tips" id="confPasswordTips">
+                                enter the same password
+                            </div>
+                        </div>
+                    </div>
+
+                    <input name="role_title" type="hidden" id="roleAccount">
+
+                </div>
+
+
+                <div id="photoController" class='photoController'>
+
+                    <div id="photoButtons">
+                        <label for="photoSelect" class="button photoButton" id="photoSelectButton">Select Photo</label>
+                        <input name="photo" type="file" id="photoSelect" accept="image/png, image/jpeg"
+                               onchange="updateImg('profilePhoto','photoSelect')" style="width: 0;">
+                        <div class="button photoButton" id="deletePhotoButton" onclick="deleteImg('profilePhoto')">
+                            Delete
+                        </div>
+                    </div>
+
+
+                    <div id="profilePhoto" class='profilePhoto'>
+                        <img src="../public/icon/person.svg" alt="profile photo">
+                    </div>
+                    <div id="accountTypeContainer">
+                        <span id="accountType"></span>
+                    </div>
+
+
+                </div>
+
+
+            </div>
+            <hr id="line">
+            <input type="submit" id="submitButton" hidden>
+            <div for="submitButton" class="button" id="submitButtonStyle">
+                Create Account
+            </div>
+        </form>
+
+        <script>
+        </script>
+
+    </div>
+
+
+    <script src="../public/js/imageSelector.js"></script>
+    <script src="../public/js/signupAnimation.js"></script>
+    <script src="../public/js/textInputChecker.js"></script>
+
+    <script>
+        // initializeInputValidator('fname', 'NAME');
+        // initializeInputValidator('lname', 'NAME');
+        formFields = {
+            USERNAME: [{
+                id: 'username',
+                require: true,
+                name: 'username',
+            }],
+            NAME: [{
+                id: 'fname',
+                require: true,
+                name: 'first_name',
+            }, {
+                id: 'lname',
+                require: true,
+                name: 'last_name',
+            }],
+            PASSWORD: [{
+                passwordId: 'password',
+                namePass: 'password',
+                confPasswordId: 'confPassword',
+                nameConf: 'conf_password',
+            }],
+        };
+        initializeFormValidator('submitButtonStyle', 'submitButton', formFields, 'formid');
+
+        initializeInteractiveChecker('username', 'USERNAME', 'AVAILABLE', 'NOT_AVAILABLE',
+            s => s + '', 'http://127.0.0.1:8888/user/check', 'username');
+    </script>
+
+
+</div>
+<footer class="footer">
+    <div>
+        <div id="footerTitle">Tester Online</div>
+        <br/>
+        <div id="footerSubTitle">
+
+        </div>
+    </div>
+</footer>
+
+</body>
+
+</html>

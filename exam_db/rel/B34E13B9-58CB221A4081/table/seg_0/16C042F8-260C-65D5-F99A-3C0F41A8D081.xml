@@ -1,0 +1,115 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="16C042F8-260C-65D5-F99A-3C0F41A8D081" name="test">
+<createdBy>MHD</createdBy>
+<createdTime>2022-06-10 04:31:56 UTC</createdTime>
+<ownerDesignName>exam_db</ownerDesignName>
+<ordsAlias>table_4</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="731B7D58-4C20-8AFA-1180-AC56286D63DF">
+<createdBy>MHD</createdBy>
+<createdTime>2022-06-12 05:19:13 UTC</createdTime>
+<ownerDesignName>exam_db</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="start_time" id="6ACE9E1E-BA6D-CC93-D93B-7BAD06C2C046">
+<createdBy>MHD</createdBy>
+<createdTime>2022-06-12 05:31:12 UTC</createdTime>
+<ownerDesignName>exam_db</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="test_duration" id="A81B892C-3E0C-CDEC-CACD-99EB47B632CE">
+<createdBy>MHD</createdBy>
+<createdTime>2022-06-12 05:31:12 UTC</createdTime>
+<ownerDesignName>exam_db</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="correcting_duration" id="4DFD5D84-CB18-4A38-A150-F82EE67A6F4F">
+<createdBy>MHD</createdBy>
+<createdTime>2022-06-12 07:08:51 UTC</createdTime>
+<ownerDesignName>exam_db</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="course_id" id="31E1F865-D182-7D98-77E1-2EB2E2C49245">
+<createdBy>MHD</createdBy>
+<createdTime>2022-06-13 20:50:55 UTC</createdTime>
+<ownerDesignName>exam_db</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="C64C7CF9-B79C-D212-E5A1-73D4A7A76395" referredColumn="7CF6972C-BDBD-2154-673A-A9F35201C8BB"/>
+</associations>
+</Column>
+<Column name="teacher_id" id="C8F15AF8-28BD-E04F-AD3C-2A80F403F84D">
+<createdBy>MHD</createdBy>
+<createdTime>2022-06-13 20:51:22 UTC</createdTime>
+<ownerDesignName>exam_db</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="722AAF35-2C24-518C-9BA8-2B663F19CA6D" referredColumn="7AC61F6F-5667-7166-1C16-AA14C068DA06"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="3CA14848-E954-4ECB-56A6-FD0C4314F2BF" name="test_PK">
+<createdBy>MHD</createdBy>
+<createdTime>2022-06-12 05:19:13 UTC</createdTime>
+<ownerDesignName>exam_db</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="731B7D58-4C20-8AFA-1180-AC56286D63DF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="BFA45D3F-8037-9C16-22C4-3DF48BB9E9E5" name="test_course_FK">
+<createdBy>MHD</createdBy>
+<createdTime>2022-06-13 20:50:55 UTC</createdTime>
+<ownerDesignName>exam_db</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="31E1F865-D182-7D98-77E1-2EB2E2C49245"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9D6BDE71-56FF-9868-E39A-EA1B6F764831" name="test_teacher_FK">
+<createdBy>MHD</createdBy>
+<createdTime>2022-06-13 20:51:22 UTC</createdTime>
+<ownerDesignName>exam_db</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C8F15AF8-28BD-E04F-AD3C-2A80F403F84D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

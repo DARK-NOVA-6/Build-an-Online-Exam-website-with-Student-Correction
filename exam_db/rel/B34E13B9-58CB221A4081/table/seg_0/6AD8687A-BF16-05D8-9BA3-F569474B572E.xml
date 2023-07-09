@@ -1,0 +1,97 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="6AD8687A-BF16-05D8-9BA3-F569474B572E" name="solved_test">
+<createdBy>MHD</createdBy>
+<createdTime>2022-06-10 04:32:24 UTC</createdTime>
+<ownerDesignName>exam_db</ownerDesignName>
+<ordsAlias>table_7</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="73F50B03-4C8D-89A6-0A60-723635C745DC">
+<createdBy>MHD</createdBy>
+<createdTime>2022-06-12 05:31:59 UTC</createdTime>
+<ownerDesignName>exam_db</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="points" id="5EF36AFF-0A57-29FA-40C3-C6B579C57B84">
+<createdBy>MHD</createdBy>
+<createdTime>2022-06-12 05:31:59 UTC</createdTime>
+<ownerDesignName>exam_db</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<defaultValue>0</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<defaultOntNull>true</defaultOntNull>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="test_id" id="3FAAF16C-8518-6B70-359C-DA97300B79A7">
+<createdBy>MHD</createdBy>
+<createdTime>2022-06-13 20:57:47 UTC</createdTime>
+<ownerDesignName>exam_db</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="271E146A-67AC-747A-AF07-D1300C35D42D" referredColumn="731B7D58-4C20-8AFA-1180-AC56286D63DF"/>
+</associations>
+</Column>
+<Column name="student_id" id="DBCCF071-F9F6-FD4C-64A6-ACF931C7C2F1">
+<createdBy>MHD</createdBy>
+<createdTime>2022-06-13 20:58:06 UTC</createdTime>
+<ownerDesignName>exam_db</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="7AD85A52-849F-6340-7BDB-B3A9B3AAADC9" referredColumn="4710D447-896A-A606-B3FD-0F05E2B21C9B"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="0CFB22B7-6DE3-7EDC-A2CC-0740BC6B5433" name="solved_test_PK">
+<createdBy>MHD</createdBy>
+<createdTime>2022-06-12 05:31:59 UTC</createdTime>
+<ownerDesignName>exam_db</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="73F50B03-4C8D-89A6-0A60-723635C745DC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="05628BB7-A5BB-6959-F893-29DF4F7E3552" name="solved_test_test_FK">
+<createdBy>MHD</createdBy>
+<createdTime>2022-06-13 20:57:47 UTC</createdTime>
+<ownerDesignName>exam_db</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3FAAF16C-8518-6B70-359C-DA97300B79A7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="68078F78-D29D-DEDD-929E-477FCB0C2C03" name="solved_test_student_FK">
+<createdBy>MHD</createdBy>
+<createdTime>2022-06-13 20:58:06 UTC</createdTime>
+<ownerDesignName>exam_db</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DBCCF071-F9F6-FD4C-64A6-ACF931C7C2F1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

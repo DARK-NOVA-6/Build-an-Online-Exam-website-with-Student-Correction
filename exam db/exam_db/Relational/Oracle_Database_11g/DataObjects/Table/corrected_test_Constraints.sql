@@ -1,0 +1,1 @@
+ALTER TABLE corrected_test ADD CONSTRAINT corrected_test_pk PRIMARY KEY ( id );

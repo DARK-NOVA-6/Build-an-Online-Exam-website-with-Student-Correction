@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>
+        Home
+    </title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="../public/js/loading.js"></script>
+    <script src="../public/js/ripple.js" defer></script>
+    <script src="../public/js/headerScript.js"></script>
+    <link rel="stylesheet" href="../public/css/main.css"/>
+    <link rel="stylesheet" href="../public/css/button.css"/>
+    <link rel="stylesheet" href="../public/css/loading.css"/>
+</head>
+
+<body class="body" id="headBody">
+<header class="header" id="header">
+    <a id="logo" href="http://Google.com" target="_blank">  </a>
+    <div id="optionContainer">
+        <div id="logInOutContainer">
+            <a id='profileLink' href='http://127.0.0.1:8888/profile'>
+                <img id='accountPhoto' src=''>
+                <div id="accountDetails"></div>
+            </a>
+            <div id="logInOut" class="button"></div>
+        </div>
+    </div>
+</header>
+
+<div class='ripple-background'>
+    <div class='circle xxlarge shade1'></div>
+    <div class='circle xlarge shade2'></div>
+    <div class='circle large shade3'></div>
+    <div class='circle medium shade4'></div>
+    <div class='circle small shade5'></div>
+</div>
+
+<div class="backgroundSection">
+    <div id="screenDisable1" style="display: none;">
+        <div id="screenDisable2">
+            <div class="loadingImg" id="boxScalingLoadin">
+                <div class="loadingImg" id="boxRotatingLoadin">
+                    <img src="" alt="" id="whiteShape1">
+                    <img src="" alt="" id="whiteShape2">
+                    <img src="" alt="" id="blueShape">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <a href="http://127.0.0.1:8888/login" class="notA">
+            <div class="button loginButton" id="loginButton">
+                Log In
+            </div>
+        </a>
+        <a href="http://127.0.0.1:8888/sign-up" class="notA">
+            <div class="button signupButton" id="signupButton">
+                Sign Up
+            </div>
+        </a>
+    </div>
+
+</div>
+<footer class="footer">
+    <div>
+        <div id="footerTitle">Tester Online</div>
+        <br/>
+        <div id="footerSubTitle">
+
+        </div>
+    </div>
+</footer>
+
+</body>
+
+</html>

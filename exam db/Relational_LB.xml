@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog 
+	xmlns="http://www.liquibase.org/xml/ns/dbchangelog" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog 
+	http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.6.xsd">
+<changeSet author="MHD" id="_10">
+  <sqlFile dbms="oracle" encoding="UTF-8" endDelimiter="/" splitStatements="false"  stripComments="false" 
+           path="exam_db\Relational\Oracle_Database_11g\DataObjects\Structure_Type\MDSYS.SDO_GEOMETRY.sql"/>
+</changeSet>
+<changeSet author="MHD" id="_20">
+  <sqlFile dbms="oracle" encoding="UTF-8" endDelimiter="/" splitStatements="false"  stripComments="false" 
+           path="exam_db\Relational\Oracle_Database_11g\DataObjects\Structure_Type\XMLTYPE.sql"/>
+</changeSet>
+<changeSet author="MHD" id="_30">
+  <sqlFile dbms="oracle" encoding="UTF-8" endDelimiter=";" splitStatements="true"  stripComments="false" 
+           path="exam_db\Relational\Oracle_Database_11g\DataObjects\Table\corrected_question.sql"/>
+</changeSet>
+<changeSet author="MHD" id="_40">
+  <sqlFile dbms="oracle" encoding="UTF-8" endDelimiter=";" splitStatements="true"  stripComments="false" 
+           path="exam_db\Relational\Oracle_Database_11g\DataObjects\Table\corrected_question_Constraints.sql"/>
+</changeSet>
+<changeSet author="MHD" id="_50">
+  <sqlFile dbms="oracle" encoding="UTF-8" endDelimiter=";" splitStatements="true"  stripComments="false" 
+           path="exam_db\Relational\Oracle_Database_11g\DataObjects\Table\corrected_test.sql"/>
+</changeSet>
+<changeSet author="MHD" id="_60">
+  <sqlFile dbms="oracle" encoding="UTF-8" endDelimiter=";" splitStatements="true"  stripComments="false" 
+           path="exam_db\Relational\Oracle_Database_11g\DataObjects\Table\corrected_test_Constraints.sql"/>
+</changeSet>
+<changeSet author="MHD" id="_70">
+  <sqlFile dbms="oracle" encoding="UTF-8" endDelimiter=";" splitStatements="true"  stripComments="false" 
+           path="exam_db\Relational\Oracle_Database_11g\DataObjects\Table\course.sql"/>
+</changeSet>
+<changeSet author="MHD" id="_80">
+  <sqlFile dbms="oracle" encoding="UTF-8" endDelimiter=";" splitStatements="true"  stripComments="false" 
+           path="exam_db\Relational\Oracle_Database_11g\DataObjects\Table\course_Constraints.sql"/>
+</changeSet>
+<changeSet author="MHD" id="_90">
+  <sqlFile dbms="oracle" encoding="UTF-8" endDelimiter=";" splitStatements="true"  stripComments="false" 
+           path="exam_db\Relational\Oracle_Database_11g\DataObjects\Table\option.sql"/>
+</changeSet>
+<changeSet author="MHD" id="_100">
+  <sqlFile dbms="oracle" encoding="UTF-8" endDelimiter=";" splitStatements="true"  stripComments="false" 
+           path="exam_db\Relational\Oracle_Database_11g\DataObjects\Table\option_Constraints.sql"/>
+</changeSet>
+<changeSet author="MHD" id="_110">
+  <sqlFile dbms="oracle" encoding="UTF-8" endDelimiter=";" splitStatements="true"  stripComments="false" 
+           path="exam_db\Relational\Oracle_Database_11g\DataObjects\Table\question.sql"/>
+</changeSet>
+<changeSet author="MHD" id="_120">
+  <sqlFile dbms="oracle" encoding="UTF-8" endDelimiter=";" splitStatements="true"  stripComments="false" 
+           path="exam_db\Relational\Oracle_Database_11g\DataObjects\Table\question_Constraints.sql"/>
+</changeSet>
+<changeSet author="MHD" id="_130">
+  <sqlFile dbms="oracle" encoding="UTF-8" endDelimiter=";" splitStatements="true"  stripComments="false" 
+           path="exam_db\Relational\Oracle_Database_11g\DataObjects\Table\solved_question.sql"/>
+</changeSet>
+<changeSet author="MHD" id="_140">
+  <sqlFile dbms="oracle" encoding="UTF-8" endDelimiter=";" splitStatements="true"  stripComments="false" 
+           path="exam_db\Relational\Oracle_Database_11g\DataObjects\Table\solved_question_Constraints.sql"/>
+</changeSet>
+<changeSet author="MHD" id="_150">
+  <sqlFile dbms="oracle" encoding="UTF-8" endDelimiter=";" splitStatements="true"  stripComments="false" 
+           path="exam_db\Relational\Oracle_Database_11g\DataObjects\Table\solved_test.sql"/>
+</changeSet>
+<changeSet author="MHD" id="_160">
+  <sqlFile dbms="oracle" encoding="UTF-8" endDelimiter=";" splitStatements="true"  stripComments="false" 
+           path="exam_db\Relational\Oracle_Database_11g\DataObjects\Table\solved_test_Constraints.sql"/>
+</changeSet>
+<changeSet author="MHD" id="_170">
+  <sqlFile dbms="oracle" encoding="UTF-8" endDelimiter=";" splitStatements="true"  stripComments="false" 
+           path="exam_db\Relational\Oracle_Database_11g\DataObjects\Table\student.sql"/>
+</changeSet>
+<changeSet author="MHD" id="_180">
+  <sqlFile dbms="oracle" encoding="UTF-8" endDelimiter=";" splitStatements="true"  stripComments="false" 
+           path="exam_db\Relational\Oracle_Database_11g\DataObjects\Table\student_Constraints.sql"/>
+</changeSet>
+<changeSet author="MHD" id="_190">
+  <sqlFile dbms="oracle" encoding="UTF-8" endDelimiter=";" splitStatements="true"  stripComments="false" 
+           path="exam_db\Relational\Oracle_Database_11g\DataObjects\Table\teacher.sql"/>
+</changeSet>
+<changeSet author="MHD" id="_200">
+  <sqlFile dbms="oracle" encoding="UTF-8" endDelimiter=";" splitStatements="true"  stripComments="false" 
+           path="exam_db\Relational\Oracle_Database_11g\DataObjects\Table\teacher_Constraints.sql"/>
+</changeSet>
+<changeSet author="MHD" id="_210">
+  <sqlFile dbms="oracle" encoding="UTF-8" endDelimiter=";" splitStatements="true"  stripComments="false" 
+           path="exam_db\Relational\Oracle_Database_11g\DataObjects\Table\test.sql"/>
+</changeSet>
+<changeSet author="MHD" id="_220">
+  <sqlFile dbms="oracle" encoding="UTF-8" endDelimiter=";" splitStatements="true"  stripComments="false" 
+           path="exam_db\Relational\Oracle_Database_11g\DataObjects\Table\test_Constraints.sql"/>
+</changeSet>
+<changeSet author="MHD" id="_230">
+  <sqlFile dbms="oracle" encoding="UTF-8" endDelimiter=";" splitStatements="true"  stripComments="false" 
+           path="exam_db\Relational\Oracle_Database_11g\DataObjects\ForeignKey\corrected_question_corrected_test_FK.sql"/>
+</changeSet>
+<changeSet author="MHD" id="_240">
+  <sqlFile dbms="oracle" encoding="UTF-8" endDelimiter=";" splitStatements="true"  stripComments="false" 
+           path="exam_db\Relational\Oracle_Database_11g\DataObjects\ForeignKey\corrected_question_solved_question_FK.sql"/>
+</changeSet>
+<changeSet author="MHD" id="_250">
+  <sqlFile dbms="oracle" encoding="UTF-8" endDelimiter=";" splitStatements="true"  stripComments="false" 
+           path="exam_db\Relational\Oracle_Database_11g\DataObjects\ForeignKey\corrected_test_solved_test_FK.sql"/>
+</changeSet>
+<changeSet author="MHD" id="_260">
+  <sqlFile dbms="oracle" encoding="UTF-8" endDelimiter=";" splitStatements="true"  stripComments="false" 
+           path="exam_db\Relational\Oracle_Database_11g\DataObjects\ForeignKey\corrected_test_student_FK.sql"/>
+</changeSet>
+<changeSet author="MHD" id="_270">
+  <sqlFile dbms="oracle" encoding="UTF-8" endDelimiter=";" splitStatements="true"  stripComments="false" 
+           path="exam_db\Relational\Oracle_Database_11g\DataObjects\ForeignKey\option_question_FK.sql"/>
+</changeSet>
+<changeSet author="MHD" id="_280">
+  <sqlFile dbms="oracle" encoding="UTF-8" endDelimiter=";" splitStatements="true"  stripComments="false" 
+           path="exam_db\Relational\Oracle_Database_11g\DataObjects\ForeignKey\question_test_FK.sql"/>
+</changeSet>
+<changeSet author="MHD" id="_290">
+  <sqlFile dbms="oracle" encoding="UTF-8" endDelimiter=";" splitStatements="true"  stripComments="false" 
+           path="exam_db\Relational\Oracle_Database_11g\DataObjects\ForeignKey\solved_question_question_FK.sql"/>
+</changeSet>
+<changeSet author="MHD" id="_300">
+  <sqlFile dbms="oracle" encoding="UTF-8" endDelimiter=";" splitStatements="true"  stripComments="false" 
+           path="exam_db\Relational\Oracle_Database_11g\DataObjects\ForeignKey\solved_question_solved_test_FK.sql"/>
+</changeSet>
+<changeSet author="MHD" id="_310">
+  <sqlFile dbms="oracle" encoding="UTF-8" endDelimiter=";" splitStatements="true"  stripComments="false" 
+           path="exam_db\Relational\Oracle_Database_11g\DataObjects\ForeignKey\solved_test_student_FK.sql"/>
+</changeSet>
+<changeSet author="MHD" id="_320">
+  <sqlFile dbms="oracle" encoding="UTF-8" endDelimiter=";" splitStatements="true"  stripComments="false" 
+           path="exam_db\Relational\Oracle_Database_11g\DataObjects\ForeignKey\solved_test_test_FK.sql"/>
+</changeSet>
+<changeSet author="MHD" id="_330">
+  <sqlFile dbms="oracle" encoding="UTF-8" endDelimiter=";" splitStatements="true"  stripComments="false" 
+           path="exam_db\Relational\Oracle_Database_11g\DataObjects\ForeignKey\test_course_FK.sql"/>
+</changeSet>
+<changeSet author="MHD" id="_340">
+  <sqlFile dbms="oracle" encoding="UTF-8" endDelimiter=";" splitStatements="true"  stripComments="false" 
+           path="exam_db\Relational\Oracle_Database_11g\DataObjects\ForeignKey\test_teacher_FK.sql"/>
+</changeSet>
+</databaseChangeLog>

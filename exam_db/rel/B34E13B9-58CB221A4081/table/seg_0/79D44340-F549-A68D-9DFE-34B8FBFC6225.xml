@@ -1,0 +1,103 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="79D44340-F549-A68D-9DFE-34B8FBFC6225" name="teacher">
+<createdBy>MHD</createdBy>
+<createdTime>2022-06-10 04:31:32 UTC</createdTime>
+<ownerDesignName>exam_db</ownerDesignName>
+<ordsAlias>table_2</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="7AC61F6F-5667-7166-1C16-AA14C068DA06">
+<createdBy>MHD</createdBy>
+<createdTime>2022-06-10 04:39:12 UTC</createdTime>
+<ownerDesignName>exam_db</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="first_name" id="976B7239-E484-C612-CC63-677CCFDD83D4">
+<createdBy>MHD</createdBy>
+<createdTime>2022-06-10 04:39:12 UTC</createdTime>
+<ownerDesignName>exam_db</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>60</dataTypeSize>
+<ownDataTypeParameters>60,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="last_name" id="29B1BAA8-6622-1E5A-55D8-F1E58E098FE5">
+<createdBy>MHD</createdBy>
+<createdTime>2022-06-10 04:39:12 UTC</createdTime>
+<ownerDesignName>exam_db</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>60</dataTypeSize>
+<ownDataTypeParameters>60,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="username" id="45F223A6-9347-0D8F-28D1-52CDC81E998F">
+<createdBy>MHD</createdBy>
+<createdTime>2022-06-10 04:39:12 UTC</createdTime>
+<ownerDesignName>exam_db</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>60</dataTypeSize>
+<ownDataTypeParameters>60,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="password" id="AE591E52-ECAB-8661-414B-D0E0FEF1D770">
+<createdBy>MHD</createdBy>
+<createdTime>2022-06-10 04:39:12 UTC</createdTime>
+<ownerDesignName>exam_db</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>250</dataTypeSize>
+<ownDataTypeParameters>250,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="photo_url" id="5D6642FD-482E-302C-B687-2FAE577CD8F8">
+<createdBy>MHD</createdBy>
+<createdTime>2022-06-10 04:39:12 UTC</createdTime>
+<ownerDesignName>exam_db</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>250</dataTypeSize>
+<ownDataTypeParameters>250,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="0D7FACF6-24CC-245C-16B5-FC45EB19CE52" name="teacher_PK">
+<createdBy>MHD</createdBy>
+<createdTime>2022-06-10 04:39:12 UTC</createdTime>
+<ownerDesignName>exam_db</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7AC61F6F-5667-7166-1C16-AA14C068DA06"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="BE98BF3E-5B35-8F68-D39C-B22E2A0809B6" name="teacher__UN">
+<createdBy>MHD</createdBy>
+<createdTime>2022-06-10 04:39:24 UTC</createdTime>
+<ownerDesignName>exam_db</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="45F223A6-9347-0D8F-28D1-52CDC81E998F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

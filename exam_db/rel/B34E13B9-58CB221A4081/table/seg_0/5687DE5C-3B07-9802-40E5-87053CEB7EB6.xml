@@ -1,0 +1,97 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="5687DE5C-3B07-9802-40E5-87053CEB7EB6" name="corrected_test">
+<createdBy>MHD</createdBy>
+<createdTime>2022-06-10 04:32:29 UTC</createdTime>
+<ownerDesignName>exam_db</ownerDesignName>
+<ordsAlias>table_8</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="067594DA-0E61-2932-6726-EC696480F0FB">
+<createdBy>MHD</createdBy>
+<createdTime>2022-06-12 06:14:22 UTC</createdTime>
+<ownerDesignName>exam_db</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="points" id="A520E29D-3F4C-2905-5E02-91B03E34C27A">
+<createdBy>MHD</createdBy>
+<createdTime>2022-06-12 06:16:39 UTC</createdTime>
+<ownerDesignName>exam_db</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<defaultValue>0</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<defaultOntNull>true</defaultOntNull>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="solved_test_id" id="A5926E0C-36C6-4D49-2083-2CBD2A99757F">
+<createdBy>MHD</createdBy>
+<createdTime>2022-06-13 21:02:39 UTC</createdTime>
+<ownerDesignName>exam_db</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="4D6B41B8-E722-8669-41CB-EF9C390C24C9" referredColumn="73F50B03-4C8D-89A6-0A60-723635C745DC"/>
+</associations>
+</Column>
+<Column name="student_id" id="85780C0D-9268-E80B-B188-B58ABD6D125F">
+<createdBy>MHD</createdBy>
+<createdTime>2022-06-13 21:02:50 UTC</createdTime>
+<ownerDesignName>exam_db</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F44B45E7-FD1D-07EB-A276-6F5B94DE66D3" referredColumn="4710D447-896A-A606-B3FD-0F05E2B21C9B"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="5A889BE0-3B70-AC9E-5191-DF660426DE4D" name="corrected_test_PK">
+<createdBy>MHD</createdBy>
+<createdTime>2022-06-12 06:14:22 UTC</createdTime>
+<ownerDesignName>exam_db</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="067594DA-0E61-2932-6726-EC696480F0FB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D6BC2876-D1F9-74B5-9A48-FC13DAC2995E" name="corrected_test_solved_test_FK">
+<createdBy>MHD</createdBy>
+<createdTime>2022-06-13 21:02:39 UTC</createdTime>
+<ownerDesignName>exam_db</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A5926E0C-36C6-4D49-2083-2CBD2A99757F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="64FA8B62-EC22-01AA-E21D-17322175E64E" name="corrected_test_student_FK">
+<createdBy>MHD</createdBy>
+<createdTime>2022-06-13 21:02:50 UTC</createdTime>
+<ownerDesignName>exam_db</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="85780C0D-9268-E80B-B188-B58ABD6D125F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
